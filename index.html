@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Napisz list do Świętego Mikołaja 🎅</title>
+
+    <meta name="description" content="Napisz swój list do Świętego Mikołaja i podziel się świątecznymi marzeniami!">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Śnieg -->
+    <div class="snow snow-one">❄</div>
+    <div class="snow snow-two">❅</div>
+    <div class="snow snow-three">❄</div>
+    <div class="snow snow-four">✧</div>
+
+    <!-- Nagłówek -->
+    <header class="hero">
+
+        <div class="top-label">
+            ✨ MAGIA ŚWIĄT BOŻEGO NARODZENIA ✨
+        </div>
+
+        <div class="santa-icon">🎅</div>
+
+        <h1>
+            Napisz list do<br>
+            <span>Świętego Mikołaja</span>
+        </h1>
+
+        <p class="hero-description">
+            Witaj w magicznym miejscu! Napisz swój list,
+            podziel się marzeniami i wyślij go prosto
+            do świątecznej krainy! 🎄
+        </p>
+
+        <div class="decoration">
+            <span>✦</span>
+            <span>❄</span>
+            <span>✦</span>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="letter-card">
+
+            <div class="card-heading">
+
+                <div class="envelope">✉️</div>
+
+                <div>
+                    <h2>Twój świąteczny list</h2>
+                    <p>Wystarczy kilka chwil, aby go wysłać!</p>
+                </div>
+
+            </div>
+
+            <form id="letterForm">
+
+                <!-- Treść listu -->
+                <div class="form-group">
+
+                    <label for="letter">
+                        Co chciałabyś przekazać Mikołajowi? 
+                        <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="letter"
+                        name="letter"
+                        placeholder="Drogi Święty Mikołaju...
+
+W tym roku chciałbym/chciałabym..."
+                        maxlength="5000"
+                        minlength="10"
+                        required
+                    ></textarea>
+
+                    <div class="character-counter">
+                        <span id="charCount">0</span>/5000 znaków
+                    </div>
+
+                </div>
+
+                <!-- Kategoria -->
+                <div class="form-group">
+
+                    <label for="wish">
+                        Wybierz kategorię swojego marzenia
+                        <span>*</span>
+                    </label>
+
+                    <select id="wish" name="wish" required>
+
+                        <option value="">Wybierz kategorię...</option>
+
+                        <option value="Zabawki">
+                            🧸 Zabawki
+                        </option>
+
+                        <option value="Elektronika">
+                            🎮 Elektronika
+                        </option>
+
+                        <option value="Książki">
+                            📚 Książki
+                        </option>
+
+                        <option value="Sport">
+                            ⚽ Sport
+                        </option>
+
+                        <option value="Podróże">
+                            ✈️ Podróże
+                        </option>
+
+                        <option value="Zdrowie i szczęście">
+                            ❤️ Zdrowie i szczęście
+                        </option>
+
+                        <option value="Inne">
+                            🎁 Coś innego
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- Honeypot antyspamowy -->
+                <div class="honeypot" aria-hidden="true">
+                    <label for="website">Nie wypełniaj tego pola</label>
+                    <input
+                        type="text"
+                        id="website"
+                        name="website"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+                </div>
+
+                <!-- Informacja -->
+                
+
+                <!-- Zgoda -->
+                <label class="consent">
+
+                    <input type="checkbox" id="consent" required>
+
+                    <span>
+                        Zgadzam się na wysłanie tego listu do Mikołaja
+                    </span>
+
+                </label>
+
+                <!-- Przycisk -->
+                <button type="submit" id="submitButton">
+
+                    <span>🎁</span>
+
+                    <span id="buttonText">
+                        Wyślij list do Mikołaja
+                    </span>
+
+                    <span>→</span>
+
+                </button>
+
+                <!-- Komunikat -->
+                <div
+                    id="statusMessage"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+
+            </form>
+
+        </section>
+
+        <!-- Dolna sekcja -->
+        <section class="bottom-message">
+
+            <div class="stars">✦ ✧ ✦</div>
+
+            <h2>Wierz w magię Świąt!</h2>
+
+            <p>
+                Każdy list jest wyjątkowy, a każde marzenie
+                zasługuje na odrobinę świątecznej magii.
+            </p>
+
+            <div class="bottom-emoji">
+                🎄 🎁 🦌
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Wykonano z ❤️ i świąteczną magią</p>
+
+        <p>
+            © 2026 | Świąteczna poczta Świętego Mikołaja
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
